@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}<title>Vehiculos Antiguos</title>{% endblock %}
+
+{% block content %}
+<div style="background-color: rgba(236, 236, 236, 1);">
+<div class="container py-4">
+    <h2 class="text-center mb-3 mt-1 text-primary">Vehículos Antiguos</h2>
+    <h5 class="text-center text-secondary mb-5">El automóvil fue un invento que cambió por completo la forma en que nos desplazamos y transformó nuestra sociedad, fue un pilar fundamental en el avance de la tecnología, conectividad y producción mundial. Su invención tiene una historia fascinante que se remonta al siglo XIX.
+La invención del automóvil se atribuye comúnmente a Karl Benz, un ingeniero alemán, que diseñó y construyó el Benz Patent-Motorwagen en 1885, el que patentó un año más tarde. Este hito marcó el comienzo de una revolución en la movilidad y el transporte, transformando la forma en que las personas se desplazaban y abriendo nuevas posibilidades en términos de comercio, turismo y conectividad. El impacto de la invención de Benz se puede apreciar en el desarrollo de la industria automotriz, que ha evolucionado continuamente para ofrecer vehículos más seguros, eficientes y sostenibles.
+Karl Benz no sólo fue un pionero en el diseño y la ingeniería automotriz, sino que también se le reconoce haber sido un visionario que contribuyó al progreso tecnológico del sector.
+El vehículo creado por Benz se considera el primer automóvil propulsado por un motor de combustión interna. Benz logró un gran avance al diseñar un motor de gasolina de cuatro tiempos y aplicarlo a un vehículo de tres ruedas.</h5>
+     
+        
+        <div class="row gy-4">
+        <div class="col-md-4 text-center">
+                      <div class="card h-100 shadow-sm">
+            <h5>Ford Model T</h5>
+            <p class="text-justify">Fabricado por Ford Motor Company entre 1908 y 1927, es famoso por ser el primer automóvil producido en masa gracias a la línea de ensamblaje, lo que permitió que fuera accesible para la clase media. Contaba con un motor de 4 cilindros en línea de 20 hp y alcanzaba una velocidad máxima de aproximadamente 72 km/h. Su carrocería era simple y resistente, fácil de mantener y reparar, y se produjeron más de 15 millones de unidades.</p>
+            <img src="{{ url_for('static', filename='F1.webp') }}" class="img-fluid rounded card-img-top" style="height:250px;" alt="Ford Model T">
+        </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+                                <div class="card h-100 shadow-sm">
+            <h5>Chevrolet Series C Classic Six</h5>
+            <p class="text-justify">Este fue el primer modelo de Chevrolet, fabricado entre 1911 y 1914 para competir con Ford. Tenía un motor de 6 cilindros en línea de 40 hp, alcanzando hasta 95 km/h, y podía transportar 5 pasajeros. Era un vehículo más lujoso y caro que el Ford Model T, con un diseño robusto y elegante.</p>
+            <img src="{{ url_for('static', filename='CHE1.jpeg') }}" class="img-fluid rounded card-img-top" style="height:300px;" alt="Chevrolet Series C Classic Six">
+        </div>
+        </div>
+
+       <div class="col-md-4 text-center">
+        <div class="card h-100 shadow-sm">
+        <h5>Mercedes 35 HP</h5>
+        <p class="text-justify">Fabricado por Daimler-Motoren-Gesellschaft en Alemania entre 1901 y 1902, es considerado el primer automóvil moderno gracias a su diseño con motor delantero y chasis bajo. Contaba con un motor de 4 cilindros de 35 hp y alcanzaba aproximadamente 75 km/h. Destacaba por su sistema de suspensión independiente y su combinación de velocidad, confort y estabilidad, que sirvió de modelo para futuros autos.</p>
+        <img src="{{ url_for('static', filename='M1.png') }}" class="img-fluid rounded" style="height:250px;" alt="Mercedes 35 HP">
+        </div>
+                </div>
+
+        </div>
+        <div class="row gy-4 mt-5">
+        <div class="col-md-6 text-center">
+                                          <div class="card h-100 shadow-sm">
+
+            <h5>Cadillac Model A</h5>
+            <p class="text-justify">Primer automóvil de Cadillac, producido entre 1903 y 1904. Poseía un motor de 2 cilindros en línea de 10 hp y alcanzaba los 45 km/h. Se hizo famoso por su precisión mecánica y durabilidad, estableciendo la reputación de Cadillac como fabricante de autos fiables y de calidad en Estados Unidos.</p>
+            <img src="{{ url_for('static', filename='C1.webp') }}" class="img-fluid rounded" style="height:200px;" alt="Cadillac Model A">
+            </div>
+            </div>
+
+        <div class="col-md-6 text-center">
+          <div class="card h-100 shadow-sm">
+            <h5>Volkswagen Type 1</h5>
+            <p class="text-justify">Fabricado por Volkswagen desde 1938 hasta 2003, es uno de los autos más icónicos de la historia. Contaba con un motor trasero de 4 cilindros opuestos (boxer), con potencias entre 25 y 60 hp según la versión, alcanzando velocidades entre 115 y 130 km/h. Fue diseñado para ser económico, compacto y accesible, con un motor refrigerado por aire, y se produjeron más de 21 millones de unidades.</p>
+            <img src="{{ url_for('static', filename='V1.jpg') }}" class="img-fluid rounded" style="height:175px;" alt="Volkswagen Type 1">
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

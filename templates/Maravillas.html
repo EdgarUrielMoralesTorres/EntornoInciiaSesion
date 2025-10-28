@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block title %}<title>Maravillas Del Mundo</title>{% endblock %}
+
+
+{% block content %}
+<div class="bg-light py-4"> 
+  <div class="container bg-white rounded shadow-sm py-4"> 
+    <h2 class="text-center mb-5 mt-1">Maravillas Del Mundo</h2>
+  
+    <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='muralla.webp') }}" class="img-fluid rounded" style="height:300px;" alt="Muralla China">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">La Gran Muralla China</h3>
+                <h5 class="text-justify">Una inmensa fortificación construida entre los siglos V a.C. y XVI d.C. para proteger el territorio chino de invasiones.
+Tiene más de 21,000 km de longitud y atraviesa montañas, desiertos y valles. Además de su función defensiva, servía para controlar el comercio y los movimientos de personas a lo largo de la Ruta de la Seda.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/EotbKqZmBuY" title="Muralla China" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+          
+            <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='petra.webp') }}" class="img-fluid rounded" style="height:300px;" alt="Petra">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">Petra </h3>
+                <h5 class="text-justify">
+                  Una ciudad tallada en roca por los nabateos alrededor del siglo VII a.C.
+Su estructura más famosa es El Tesoro (Al-Khazneh), con una fachada impresionante esculpida directamente en piedra rosada. Fue un importante centro comercial que conectaba Arabia, Egipto y Siria.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/kUuDQfdsS5k" title="Petra" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+           
+            <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='cristo.jpg') }}" class="img-fluid rounded" style="height:300px;" alt="Cristo Redentor">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">El Cristo Redentor</h3>
+                <h5 class="text-justify">Ubicado en la cima del Cerro del Corcovado en Río de Janeiro, esta estatua de 30 metros de altura representa a Jesucristo con los brazos abiertos.
+Inaugurada en 1931, simboliza la paz y la acogida del pueblo brasileño. Es uno de los íconos más reconocidos del cristianismo.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/oq-2m2diCy8" title="Cristo Redentor" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+         
+            <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='machu.jpg') }}" class="img-fluid rounded" style="height:300px;" alt="Machu Picchu">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">Machu Picchu</h3>
+                <h5 class="text-justify">Una antigua ciudad inca construida en el siglo XV sobre una montaña de los Andes, a más de 2,400 metros de altura.
+Fue un importante centro religioso y astronómico, y se mantiene en excelente estado gracias a su arquitectura adaptada al terreno montañoso. Fue redescubierta en 1911 por Hiram Bingham.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/oZ90M55mDac" title="Machu Picchu" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+          
+            <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='coliseo.jpg') }}" class="img-fluid rounded" style="height:300px;" alt="El Coliseo De roma">
+            </div>
+
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">El Coliseo de Roma</h3>
+                <h5 class="text-justify">Construido entre los años 70 y 80 d.C., fue el mayor anfiteatro del Imperio Romano, con capacidad para más de 50,000 espectadores.
+Allí se celebraban combates de gladiadores, representaciones teatrales y eventos públicos. Hoy es uno de los símbolos más reconocidos de la historia romana.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/56tlOtVn40c" title="Muralla China" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+          
+            <div class="row gy-4 mt-4">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='taj.jpg') }}" class="img-fluid rounded" style="height:300px;" alt="Taj Mahal">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">El Taj Mahal</h3>
+                <h5 class="text-justify">Un majestuoso mausoleo de mármol blanco construido por el emperador Shah Jahan en el siglo XVII en honor a su esposa Mumtaz Mahal.
+Es famoso por su simetría, su belleza arquitectónica y los jardines que lo rodean. Representa uno de los mayores actos de amor de la historia.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/0NSq1-Ne26Y" title="Muralla China" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+          
+            <div class="row gy-4 mt-4">
+        <div class="col-md-4">
+                <img src="{{ url_for('static', filename='chice.jpg') }}" class="img-fluid rounded" style="height:300px;" alt="Chichén Itzá">
+            </div>
+        <div class="col-md-4 text-center">
+                <h3 class="text-secondary">Chichén Itzá</h3>
+                <h5 class="text-justify">Una antigua ciudad maya ubicada en Yucatán, destacada por su pirámide principal, El Castillo o Templo de Kukulkán.
+Este templo servía como calendario solar: durante los equinoccios, la sombra del sol crea la ilusión de una serpiente descendiendo por las escaleras. Fue un importante centro político, religioso y astronómico de la civilización maya.
+</h5>       
+</div>
+            <div class="col-md-4 mx-auto mt-5 mb-5">
+            <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/uUPjSh1Bt60" title="Muralla China" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+            </div>
+            </div>
+            </div>
+            </div>
+</div>
+{% endblock %}

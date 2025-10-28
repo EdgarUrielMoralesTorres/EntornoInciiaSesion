@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}<title>Animales Exóticos</title>{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h2 class="text-center mb-3 mt-1 fw-bold text-success">Animales Exóticos</h2>
+    <p class="lead text-center text-secondary mb-5">El reino animal es fascinante, diverso y también exótico.</p>
+
+    <h3 class="text-primary mb-3">Acuáticos</h3>
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='dragonMar.webp') }}" class="card-img-top img-fluid" style="height:250px;" alt="Dragón de mar">
+                <div class="card-body text-center" style="background-color: rgb(156, 233, 233);">
+                    <h5 class="card-title">Dragones del mar</h5>
+                    <p class="card-text text-justify">Esta criatura es un singular animalito de nuestras aguas. Su nombre científico es dragón de mar foliáceo (Phycodurus eques)
+                    y es un pez marino perteneciente a la familia Syngnathidae. Esta misma familia incluye al caballito de mar. Es originario de las costas sur y oeste de Australia. Y es uno de los animales marinos raros más inadvertidos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='pez.webp') }}" class="card-img-top img-fluid" style="height:250px;" alt="Pez Abisal">
+                <div class="card-body text-center" style="background-color: rgb(156, 233, 233);">
+                    <h5 class="card-title">El Chauliodus</h5>
+                    <p class="card-text text-justify">Pertenecen a la familia Stomiidae. Los peces del género Chauliodus utilizan órganos bioluminiscentes para 
+                    atraer presas y después cazarlas en las profundidades del océano. Adicionalmente, este es uno de los animales marinos raros que posee una apariencia terrible. Y es de esperarse, pues es uno de los mayores depredadores de su hábitat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="mt-5 text-success mb-3">Terrestres</h3>
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='pangolin.webp') }}" class="card-img-top img-fluid" style="height:250px;" alt="Pangolín">
+                <div class="card-body text-center" style="background-color: rgb(115, 163, 103);">
+                    <h5 class="card-title">Pangolín</h5>
+                    <p class="card-text text-justify">El pangolín o manis, es un tipo de mamífero y animal exótico con grandes escamas y vive en zonas tropicales de Asia y África.
+                    Aunque no poseen una arma primaria, las poderosas patas que utilizan para cavar tienen la fuerza suficiente para partir una pierna humana de un solo golpe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='pikali2.webp') }}" class="card-img-top img-fluid" style="height:250px;" alt="Pika Ili">
+                <div class="card-body text-center" style="background-color: rgb(115, 163, 103);">
+                    <h5 class="card-title">Pika Ili</h5>
+                    <p class="card-text text-justify">Durante más de 20 años, el pika Ili (Ochotona iliensis), un tipo de mamífero pequeño que vive en las montañas,
+                    con cara de oso de peluche, había eludido a los científicos en las montañas de Tianshan, en el noroeste de China.
+                    La gente ha visto a la criatura peluda sólo unas cuantas veces desde que fue descubierta accidentalmente en 1983. De hecho, sólo se han visto 29 ejemplares vivos, y poco se sabe acerca de su ecología y comportamiento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="mt-5 text-warning mb-3">Aéreos</h3>
+    <div class="row gy-4 mb-5">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='kakapo.jpg') }}" class="card-img-top img-fluid" style="height:250px;" alt="Kakapo">
+                <div class="card-body text-center" style="background-color: rgb(205, 209, 164);">
+                    <h5 class="card-title">Kakapo</h5>
+                    <p class="card-text text-justify">El kakapo es otra de las aves raras de Nueva Zelanda. Durante millones de años, tuvo muy pocos depredadores. Sin embargo, esto cambió con la introducción de otros animales en la isla y su caza, lo que redujo considerablemente su población.
+                    Estas grandes aves no voladoras también son nocturnas y emergen por la noche para buscar frutas, semillas y brotes de plantas. A pesar de no poder volar, el kakapo puede trepar a los árboles con sus patas y luego usar sus alas relativamente pequeñas para planear de regreso al suelo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='AguilaFilipina.jpg') }}" class="card-img-top img-fluid" style="height:250px;" alt="Águila filipina">
+                <div class="card-body text-center" style="background-color: rgb(205, 209, 164);">
+                    <h5 class="card-title">Águila filipina</h5>
+                    <p class="card-text text-justify">Esta ave es originaria de Filipinas, donde es el ave nacional. Sin embargo, el águila filipina se encuentra en peligro crítico de extinción, y los expertos estiman que quedan menos de 500 ejemplares.
+                    Estas raras aves se encuentran entre las especies de águilas más grandes del mundo. Pueden alcanzar alturas de 90 cm y envergaduras de 2 metros. Las águilas filipinas se reconocen por su distintiva cresta marrón y blanca, que rodea sus cabezas como una melena.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
